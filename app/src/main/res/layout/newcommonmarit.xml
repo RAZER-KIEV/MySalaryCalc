@@ -1,0 +1,482 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/shutterstock_image_of_hi_tech_data_center">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableRow2">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На Главную"
+            android:id="@+id/btOnMain"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tvJournal"
+            android:layout_alignStart="@+id/tvJournal"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#d2adffaa"
+            android:padding="10dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать"
+            android:id="@+id/btCalcStart"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btOnMain"
+            android:layout_toEndOf="@+id/btOnMain"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#d2adffaa"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:id="@+id/tableRow3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Доля каждого:"
+            android:id="@+id/tvForPersMar"
+            android:background="#b0ffffff"
+
+            android:layout_weight="0.5"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="...."
+            android:id="@+id/tvSummForEach"
+
+            android:background="#ffffded7"
+
+            android:layout_weight="0.5"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Общие заслуги"
+            android:id="@+id/tvPersMerit"
+            android:background="#61ffffff"
+            android:layout_above="@+id/tableRow3"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:layout_span="2"
+            android:layout_marginBottom="2dp"
+            android:padding="3dp"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/tableRow4"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/trEmpl456"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:id="@+id/emplLayoutRow0">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник1"
+                    android:id="@+id/cbEmployee1"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник2"
+                    android:id="@+id/cbEmployee2"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:layout_centerHorizontal="true"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник3"
+                    android:id="@+id/cbEmployee3"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:layout_alignRight="@+id/etDayConn"
+                    android:layout_alignEnd="@+id/etDayConn"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/trEmpl789">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:id="@+id/emplLayoutRow1">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник4"
+                    android:id="@+id/cbEmployee4"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник5"
+                    android:id="@+id/cbEmployee5"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:layout_centerHorizontal="true"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник6"
+                    android:id="@+id/cbEmployee6"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:layout_alignRight="@+id/etDayConn"
+                    android:layout_alignEnd="@+id/etDayConn"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:id="@+id/emplLayoutRow2">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник7"
+                    android:id="@+id/cbEmployee7"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник8"
+                    android:id="@+id/cbEmployee8"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:layout_centerHorizontal="true"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Работник9"
+                    android:id="@+id/cbEmployee9"
+                    android:checked="false"
+                    android:layout_below="@+id/tvPersMerit"
+                    android:layout_alignRight="@+id/etDayConn"
+                    android:layout_alignEnd="@+id/etDayConn"
+                    android:background="#b0ffffff"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    android:padding="3dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Подкл. дневные"
+                android:id="@+id/tvDaycon"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/etDayConn"
+                android:layout_toStartOf="@+id/etDayConn"
+                android:background="#b0ffffff" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etDayConn"
+                android:layout_alignBottom="@+id/tvDaycon"
+                android:background="#fffffbff"
+                android:layout_alignRight="@+id/etEvenConn"
+                android:layout_alignEnd="@+id/etEvenConn"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:layout_alignLeft="@+id/etEvenConn"
+                android:layout_alignStart="@+id/etEvenConn" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Подкл. вечерние"
+                android:id="@+id/tvEvCon"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvDaycon"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/etDayConn"
+                android:layout_toStartOf="@+id/etDayConn"
+                android:background="#b0ffffff"
+                android:visibility="visible" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/etEvenConn"
+                android:layout_above="@+id/tvOptinst"
+                android:layout_toEndOf="@+id/tvBxInst"
+                android:background="#fffffbfd"
+                android:layout_toRightOf="@+id/tvBxInst"
+                android:text="0"
+                android:visibility="visible"
+                android:enabled="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Установка ящиков"
+                android:id="@+id/tvBxInst"
+                android:layout_below="@+id/tvOptinst"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="30dp"
+                android:background="#b0ffffff"
+                android:visibility="visible" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etBxInst"
+                android:layout_alignBottom="@+id/tvBxInst"
+                android:layout_alignRight="@+id/etOptInst"
+                android:layout_alignEnd="@+id/etOptInst"
+                android:background="#fffffbfd"
+                android:layout_toRightOf="@+id/tvBxInst"
+                android:layout_toEndOf="@+id/tvBxInst"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Протяжка оптики"
+                android:id="@+id/tvOptinst"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentLeft="true"
+
+                android:background="#b0ffffff"
+                android:visibility="visible" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etOptInst"
+                android:autoText="false"
+                android:background="#fffffbfd"
+                android:layout_alignBottom="@+id/tvOptinst"
+                android:layout_toRightOf="@+id/tvBxInst"
+                android:layout_toEndOf="@+id/tvBxInst"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Другие заслуги"
+                android:id="@+id/textView"
+                android:layout_below="@+id/tvBxInst"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/tvBxInst"
+                android:layout_alignEnd="@+id/tvBxInst"
+                android:background="#b0ffffff"
+                android:visibility="visible" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/etOthers"
+                android:background="#fffffbfd"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_alignLeft="@+id/etBxInst"
+                android:layout_alignStart="@+id/etBxInst"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:visibility="visible" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tableRow3">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Считаем.."
+            android:id="@+id/tvJournal"
+            android:background="#fff9ff90"
+            android:visibility="visible"
+            android:padding="5dp"
+            android:textIsSelectable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:editable="true"
+            android:enabled="true" />
+    </TableRow>
+
+</RelativeLayout>

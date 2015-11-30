@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.kiev.netmaster.mysalarycalc.Activity3"/>
+      <point      
+        x = "1656"      
+        y = "340"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ua.kiev.netmaster.mysalarycalc.Activity3"/>
+      <point      
+        x = "2924"      
+        y = "340"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.kiev.netmaster.mysalarycalc.PersonalMaritActivity"/>
+      <point      
+        x = "700"      
+        y = "96"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ua.kiev.netmaster.mysalarycalc.PersonalMaritActivity"/>
+      <point      
+        x = "1968"      
+        y = "96"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.kiev.netmaster.mysalarycalc.activittes.CommonMaritActivity"/>
+      <point      
+        x = "2904"      
+        y = "1440"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ua.kiev.netmaster.mysalarycalc.activittes.CommonMaritActivity"/>
+      <point      
+        x = "4172"      
+        y = "1440"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.kiev.netmaster.mysalarycalc.MainActivity2Activity"/>
+      <point      
+        x = "872"      
+        y = "184"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ua.kiev.netmaster.mysalarycalc.MainActivity2Activity"/>
+      <point      
+        x = "2140"      
+        y = "184"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.kiev.netmaster.mysalarycalc.activittes.MainActivity"/>
+      <point      
+        x = "1888"      
+        y = "440"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ua.kiev.netmaster.mysalarycalc.activittes.MainActivity"/>
+      <point      
+        x = "3156"      
+        y = "440"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "ua.kiev.netmaster.mysalarycalc.activittes.SettinsActivity"/>
+      <point      
+        x = "840"      
+        y = "1848"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.MenuState"      
+        className = "ua.kiev.netmaster.mysalarycalc.activittes.SettinsActivity"/>
+      <point      
+        x = "2108"      
+        y = "1848"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

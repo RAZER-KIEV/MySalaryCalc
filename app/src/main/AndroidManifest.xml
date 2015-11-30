@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.kiev.netmaster.mysalarycalc" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activittes.CommonMaritActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activittes.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activittes.SettinsActivity"
+            android:label="@string/title_activity_settins" >
+        </activity>
+        <activity
+            android:name=".activittes.DBActivity"
+            android:label="@string/title_activity_db"
+            android:parentActivityName=".activittes.SettinsActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.kiev.netmaster.mysalarycalc.activittes.SettinsActivity" />
+        </activity>
+        <activity
+            android:name=".activittes.DataBaseAct"
+            android:label="@string/title_activity_data_base"
+            android:theme="@style/AppTheme" >
+        </activity>
+    </application>
+
+</manifest>
